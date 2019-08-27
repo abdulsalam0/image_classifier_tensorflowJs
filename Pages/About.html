@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Webcam.html">Webcam</a></li>
+        <li><a href="Webcam_class.html">Custom Classifier</a></li>
+        <li><a class="current" href="About.html">About</a></li>
+      </ul>
+    </div>
+   <div class="content">
+     <p>about section</p>
+     <!-- Add an image that we will use to test -->
+    <img id="img" crossOrigin src="https://i.imgur.com/JlUvsxa.jpg" width=227 height=227/>
+
+    <div id="console">
+      <p>Loading information</p>
+    </div>
+    <div id="loader"></div>
+   </div>
+    
+    <!-- Load index.js after the content of the page -->
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Webcam.html">Webcam</a></li>
+        <li><a class="current" href="Webcam_class.html">Custom Classifier</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+   <div class="content">
+     <P>welcome to the webcam section</P>
+     <!-- Add an image that we will use to test -->
+     <div class="vid_screen">
+        <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+     </div>
+     <div class="btn_container">
+        <button class="button" id="class-a"><span>Add A </span></button>
+        <button class="button" id="class-b"><span>Add B </span></button>
+        <button class="button" id="class-c"><span>Add C </span></button>
+     </div>
+    <div id="console">
+      <p>Loading information</p>
+    </div>
+    <div id="loader"></div>
+   </div>
+    
+    <!-- Load index.js after the content of the page -->
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>
