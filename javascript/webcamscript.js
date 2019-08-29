@@ -1,4 +1,7 @@
+let net;
+const classifier = knnClassifier.create();
 const webcamElement = document.getElementById('webcam');
+console.log("hello")
 
 async function setupWebcam() {
   return new Promise((resolve, reject) => {
@@ -14,6 +17,7 @@ async function setupWebcam() {
         },
         error => reject());
     } else {
+      console.log("check the webcam setup funcation")
       reject();
     }
   });
@@ -21,11 +25,13 @@ async function setupWebcam() {
 
 async function app() {
     console.log('Loading mobilenet..');
+
   
     // Load the model.
     net = await mobilenet.load();
     console.log('Sucessfully loaded model');
-    
+    document.getElementById("loader").outerHTML = "";
+
     await setupWebcam();
     while (true) {
       const result = await net.classify(webcamElement);
@@ -40,3 +46,5 @@ async function app() {
       await tf.nextFrame();
     }
   }
+
+  app();

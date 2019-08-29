@@ -3,8 +3,8 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <!-- Load the latest version of TensorFlow.js -->
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
-    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
     <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
   </head>
   <body>
     <div class="sidebar">
@@ -17,10 +17,8 @@
     </div>
    <div class="content">
      <P>welcome to the webcam section</P>
-     <!-- Add an image that we will use to test -->
-     <div class="vid_screen">
+     <!-- Add an webcam that we will use to test -->
         <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
-     </div>
      <div class="btn_container">
         <button class="button" id="class-a"><span>Add A </span></button>
         <button class="button" id="class-b"><span>Add B </span></button>
@@ -42,6 +40,6 @@
    </div>
     
     <!-- Load index.js after the content of the page -->
-    <script src="../javascript/script.js"></script>
+    <script src="../javascript/Custom_classifier.js"></script>
   </body>
 </html>
