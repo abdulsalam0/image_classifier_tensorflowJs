@@ -42,7 +42,9 @@ li a:hover{
   margin-top: 20px;
 }
 
-
+.space{
+height: 20px;
+}
 .content{
   margin-left: 250px;
   padding: 0px 0px;
@@ -73,6 +75,7 @@ li a:hover{
 
 #photo{
   border: 3px solid rgb(255, 238, 188);
+  width: 400px;
 }
 
 

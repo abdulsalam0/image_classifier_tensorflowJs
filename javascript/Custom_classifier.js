@@ -27,7 +27,7 @@ async function app() {
     // Load the model.
     net = await mobilenet.load();
     console.log('Sucessfully loaded model');
-    document.getElementById("loader").outerHTML = "";
+    document.getElementById("image_load").outerHTML = "";
 
   
     await setupWebcam();
