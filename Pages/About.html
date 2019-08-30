@@ -2,8 +2,6 @@
   <head>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <!-- Load the latest version of TensorFlow.js -->
-    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
-    <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
   </head>
   <body>
     <div class="sidebar">
@@ -19,29 +17,36 @@
         <h3>About <span>TensorFlow</span></h3>
     </div>
 
-   <div class="content">
-     <div id="photo">
-        <img id="img" crossOrigin src="https://i.imgur.com/JlUvsxa.jpg" width=227 height=227/>
+   <div class="info">
+  
+     <div class="container">
+       <div class="subtitle">
+         <h3>What we used? </h3>
+         <p>The following list has the elements we used to create this website. </p>
+       </div>
+       <div class="box">
+         <img src="../img/logo_html.png" alt="HTML logo">
+         <h2 class="tools_titles">HTML</h2>
+         <p>HTML is the building blocks for our website creating the main structure for the website.</p>
+       </div>
+       <div class="box">
+        <img src="../img/logo_css.png" alt="CSS logo">
+        <h2 class="tools_titles">CSS</h2>
+        <p>CSS is the creative side of the website, where you can design your HTML structure to make it feel more like home ❤️.</p>
+       </div>
+       <div class="box" id="js">
+        <img src="../img/javascript_logo.png" alt="Javascript logo">
+        <h2 class="tools_titles">JavaScript</h2>
+        <p>Javascript is the coding language we are using to handle all the events that happen in the website. This language also plays a bigger role in the image classification section of the app.</p>
+       </div>
+       <div class="box">
+        <img src="../img/Tensorflow_logo.png" alt="">
+        <h2 class="tools_titles">Tensorflow.js</h2>
+        <p>The library we used for the image classification was TensorFlow JavaScript library. This library comes with a pretrained model that we can used to Classify objects we also can make custom classification on the fly.</p>
+       </div>
      </div>
-     <!-- Add an image that we will use to test -->
-    
-    <div id="console">
-      <p>Loading information</p>
-    </div>
-
-      <div id = "loader" class="lds-roller">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
 
   </div>
     <!-- Load index.js after the content of the page -->
-    <script src="../javascript/script.js"></script>
   </body>
 </html>

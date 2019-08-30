@@ -12,7 +12,7 @@ customBtn.addEventListener("click", function() {
 
 realFileBtn.addEventListener("change", function() {
   if (realFileBtn.value) {
-    customTxt.innerHTML = realFileBtn.files[0].name;
+    customTxt.innerHTML = realFileBtn.value;
   } else {
     customTxt.innerHTML = "No file chosen, yet.";
   }

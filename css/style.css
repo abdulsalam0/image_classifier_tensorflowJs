@@ -72,7 +72,7 @@ li a:hover{
 }
 
 #photo{
-  padding: 20px;
+  border: 3px solid rgb(255, 238, 188);
 }
 
 
@@ -274,3 +274,39 @@ width: 175px;
     transform: rotate(360deg);
   }
 }
+
+/* About Page */
+.info{
+  margin-left: 200px;
+}
+
+
+.container{
+  width: 75%;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.box img{
+  height: 100px;
+  width: 100px;
+}
+
+.container .box{
+
+  width: 30%;
+  float: left;
+  text-align: center;
+  padding: 10px;
+  width: 500;
+  border: 3px solid rgb(255, 238, 188);
+  margin: 10px;
+  height: auto;
+  background: #444;
+}
+
+.container .box#js{
+height: 264px;
+}
+
