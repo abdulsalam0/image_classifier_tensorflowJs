@@ -1,5 +1,24 @@
 let net;
 
+const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customTxt = document.getElementById("custom-text");
+
+
+// this loads up the  name of the file
+customBtn.addEventListener("click", function() {
+  realFileBtn.click();
+});
+
+realFileBtn.addEventListener("change", function() {
+  if (realFileBtn.value) {
+    customTxt.innerHTML = realFileBtn.files[0].name;
+  } else {
+    customTxt.innerHTML = "No file chosen, yet.";
+  }
+});
+
+
 async function app() {
   console.log('Loading mobilenet..');
 

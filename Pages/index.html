@@ -14,15 +14,22 @@
         <li><a href="About.html">About</a></li>
       </ul>
     </div>
+    <div class="title">
+      <h3>Image <span>Classifier</span></h3>
+  </div>
    <div class="content">
      <!-- Add an image that we will use to test -->
      <div id="photo">
-        <img id="img" crossOrigin src="https://i.imgur.com/JlUvsxa.jpg" width=227 height=227/>
+        <img id="img" crossOrigin src="../Test_images/Cat.jpg" width=400 height=350/>
      </div>
 
     <div id="console">
-      <p>Loading information</p>
+      <p>Loading AI</p>
     </div>
+
+    <input type="file" id="real-file" hidden="hidden" onchange="showImage.call(this)" />
+    <button type="button" class="button" id="custom-button"><span>Pick a new image </span></button>
+    <span id="custom-text">No file chosen, yet.</span>
 
     <!-- the loading animation-->
     <div id = "loader" class="lds-roller">
